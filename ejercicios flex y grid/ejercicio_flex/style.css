@@ -1,0 +1,801 @@
+.container-row {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+    gap: 10px;
+    padding: 10px;
+    width: 80%;
+}
+.row1  {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: red;
+    align-content: center;
+}
+.row2  {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: green;
+    align-content: center;
+}
+.row3  {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: blue;
+    align-content: center;
+}
+.row4 {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: yellow;
+    align-content: center;
+}
+/* */
+.container-row-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    border: 2px solid black;
+    gap: 10px;
+    padding: 10px;
+    width: 80%;
+}
+.row1  {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: red;
+    align-content: center;
+}
+.row2  {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: green;
+    align-content: center;
+}
+.row3  {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: blue;
+    align-content: center;
+}
+.row4 {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: yellow;
+    align-content: center;
+}
+/* */
+.container-column {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    gap: 10px;
+    padding: 10px;
+    width: 80%;
+}
+.row1  {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: red;
+    align-content: center;
+}
+.row2  {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: green;
+    align-content: center;
+}
+.row3  {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: blue;
+    align-content: center;
+}
+.row4 {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: yellow;
+    align-content: center;
+}
+/* */
+.container-reverse {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    gap: 10px;
+    padding: 10px;
+    width: 80%;
+}
+.row1  {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: red;
+    align-content: center;
+}
+.row2  {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: green;
+    align-content: center;
+}
+.row3  {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: blue;
+    align-content: center;
+}
+.row4 {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: yellow;
+    align-content: center;
+}
+/* */
+.container-nowrap {
+    display: flex;
+    flex-wrap: nowrap;
+    border: 2px solid black;
+    gap: 10px;
+    padding: 10px;
+    width: 80%;
+}
+.row1  {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: red;
+    align-content: center;
+}
+.row2  {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: green;
+    align-content: center;
+}
+.row3  {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: blue;
+    align-content: center;
+}
+.row4 {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: yellow;
+    align-content: center;
+}
+/* */
+.container-rap {
+    display: flex;
+    flex-wrap: nowrap;
+    border: 2px solid black;
+    gap: 10px;
+    padding: 10px;
+    width: 30%;
+}
+.row1  {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: red;
+    align-content: center;
+}
+.row2  {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: green;
+    align-content: center;
+}
+.row3  {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: blue;
+    align-content: center;
+}
+.row4 {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: yellow;
+    align-content: center;
+}
+/* */
+.container-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    gap: 10px;
+    padding: 10px;
+    width: 30%;
+}
+.row1  {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: red;
+    align-content: center;
+}
+.row2  {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: green;
+    align-content: center;
+}
+.row3  {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: blue;
+    align-content: center;
+}
+.row4 {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: yellow;
+    align-content: center;
+}
+/* */
+.container-wrapverse {
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    gap: 10px;
+    padding: 10px;
+    width: 30%;
+}
+.row1  {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: red;
+    align-content: center;
+}
+.row2  {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: green;
+    align-content: center;
+}
+.row3  {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: blue;
+    align-content: center;
+}
+.row4 {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: yellow;
+    align-content: center;
+}
+/* */
+.container-flexstart {
+    display: flex;
+    justify-content: flex-start;
+    border: 2px solid black;
+    gap: 10px;
+    padding: 10px;
+    width: 80%;
+}
+.row1  {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: red;
+    align-content: center;
+}
+.row2  {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: green;
+    align-content: center;
+}
+.row3  {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: blue;
+    align-content: center;
+}
+.row4 {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: yellow;
+    align-content: center;
+}
+/* */
+.container-flexend {
+    display: flex;
+    justify-content: flex-end;
+    border: 2px solid black;
+    gap: 10px;
+    padding: 10px;
+    width: 80%;
+}
+.row1  {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: red;
+    align-content: center;
+}
+.row2  {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: green;
+    align-content: center;
+}
+.row3  {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: blue;
+    align-content: center;
+}
+.row4 {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: yellow;
+    align-content: center;
+}
+/* */
+.container-center {
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    gap: 10px;
+    padding: 10px;
+    width: 80%;
+}
+.row1  {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: red;
+    align-content: center;
+}
+.row2  {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: green;
+    align-content: center;
+}
+.row3  {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: blue;
+    align-content: center;
+}
+.row4 {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: yellow;
+    align-content: center;
+}
+/* */
+.container-spacebet {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid black;
+    gap: 10px;
+    padding: 10px;
+    width: 80%;
+}
+.row1  {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: red;
+    align-content: center;
+}
+.row2  {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: green;
+    align-content: center;
+}
+.row3  {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: blue;
+    align-content: center;
+}
+.row4 {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: yellow;
+    align-content: center;
+}
+/* */
+.container-spacearo {
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid black;
+    gap: 10px;
+    padding: 10px;
+    width: 80%;
+}
+.row1  {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: red;
+    align-content: center;
+}
+.row2  {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: green;
+    align-content: center;
+}
+.row3  {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: blue;
+    align-content: center;
+}
+.row4 {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: yellow;
+    align-content: center;
+}
+/* */
+.container-spaceeve {
+    display: flex;
+    justify-content: space-evenly;
+    border: 2px solid black;
+    gap: 10px;
+    padding: 10px;
+    width: 80%;
+}
+.row1  {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: red;
+    align-content: center;
+}
+.row2  {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: green;
+    align-content: center;
+}
+.row3  {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: blue;
+    align-content: center;
+}
+.row4 {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: yellow;
+    align-content: center;
+}
+/* */
+.container-alistretch {
+    display: flex;
+    align-items: stretch;
+    border: 2px solid black;
+    gap: 10px;
+    padding: 10px;
+    width: 80%;
+    height: 200px;
+}
+.row1  {
+    border: 1px solid black;
+    width: 50px;
+    color: white;
+    background-color: red;
+    align-content: center;
+}
+.row2  {
+    border: 1px solid black;
+    width: 50px;
+    color: white;
+    background-color: green;
+    align-content: center;
+}
+.row3  {
+    border: 1px solid black;
+    width: 50px;
+    color: white;
+    background-color: blue;
+    align-content: center;
+}
+.row4 {
+    border: 1px solid black;
+    width: 50px;
+    color: white;
+    background-color: yellow;
+    align-content: center;
+}
+/* */
+.container-aliflexend {
+    display: flex;
+    align-items: flex-end;
+    border: 2px solid black;
+    gap: 10px;
+    padding: 10px;
+    width: 80%;
+    height: 200px;
+}
+.row1  {
+    border: 1px solid black;
+    width: 50px;
+    color: white;
+    background-color: red;
+    align-content: center;
+}
+.row2  {
+    border: 1px solid black;
+    width: 50px;
+    color: white;
+    background-color: green;
+    align-content: center;
+}
+.row3  {
+    border: 1px solid black;
+    width: 50px;
+    color: white;
+    background-color: blue;
+    align-content: center;
+}
+.row4 {
+    border: 1px solid black;
+    width: 50px;
+    color: white;
+    background-color: yellow;
+    align-content: center;
+}
+/* */
+.container-aliflex {
+    display: flex;
+    align-items: flex-start;
+    border: 2px solid black;
+    gap: 10px;
+    padding: 10px;
+    width: 80%;
+    height: 200px;
+}
+.row1  {
+    border: 1px solid black;
+    width: 50px;
+    color: white;
+    background-color: red;
+    align-content: center;
+}
+.row2  {
+    border: 1px solid black;
+    width: 50px;
+    color: white;
+    background-color: green;
+    align-content: center;
+}
+.row3  {
+    border: 1px solid black;
+    width: 50px;
+    color: white;
+    background-color: blue;
+    align-content: center;
+}
+.row4 {
+    border: 1px solid black;
+    width: 50px;
+    color: white;
+    background-color: yellow;
+    align-content: center;
+}
+/* */
+.container-alicenter {
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+    gap: 10px;
+    padding: 10px;
+    width: 80%;
+    height: 200px;
+}
+.row1  {
+    border: 1px solid black;
+    width: 50px;
+    color: white;
+    background-color: red;
+    align-content: center;
+}
+.row2  {
+    border: 1px solid black;
+    width: 50px;
+    color: white;
+    background-color: green;
+    align-content: center;
+}
+.row3  {
+    border: 1px solid black;
+    width: 50px;
+    color: white;
+    background-color: blue;
+    align-content: center;
+}
+.row4 {
+    border: 1px solid black;
+    width: 50px;
+    color: white;
+    background-color: yellow;
+    align-content: center;
+}
+/* */
+.container-alibaseline {
+    display: flex;
+    align-items: baseline;
+    border: 2px solid black;
+    gap: 10px;
+    padding: 10px;
+    width: 80%;
+    height: 200px;
+}
+.row1  {
+    border: 1px solid black;
+    width: 50px;
+    color: white;
+    background-color: red;
+}
+.row2  {
+    border: 1px solid black;
+    width: 50px;
+    color: white;
+    background-color: green;
+}
+.row3  {
+    border: 1px solid black;
+    width: 50px;
+    color: white;
+    background-color: blue;
+}
+.row4 {
+    border: 1px solid black;
+    width: 50px;
+    color: white;
+    background-color: yellow;
+}
+/* */
+.container-alibaseline2 {
+    display: flex;
+    align-items: baseline;
+    border: 2px solid black;
+    gap: 10px;
+    padding: 10px;
+    width: 80%;
+    height: 200px;
+}
+.row1  {
+    border: 1px solid black;
+    width: 50px;
+    color: white;
+    background-color: red;
+    font-size: large;
+    display: inline-flex;
+}
+.row2  {
+    border: 1px solid black;
+    width: 50px;
+    color: white;
+    background-color: green;
+    font-size: small;
+    display: inline-flex;
+}
+.row3  {
+    border: 1px solid black;
+    width: 50px;
+    color: white;
+    background-color: blue;
+    font-size: medium;
+    display: inline-flex;
+}
+.row4 {
+    border: 1px solid black;
+    width: 50px;
+    color: white;
+    background-color: yellow;
+    font-size: x-large;
+    display: inline-flex;
+}
