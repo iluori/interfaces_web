@@ -1,0 +1,51 @@
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    margin: 0;
+}
+
+nav {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    
+}
+
+.tarjeta-producto {
+    margin: 4rem auto;
+    width: 19rem;
+    border: 1px solid #ccc;
+    position: relative;
+}
+.etiqueta-oferta {
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+    background-color: red;
+    color: white;
+    padding: 0.5rem 0.5rem;
+    border-radius: 0.5rem;
+}
+.etiqueta-oferta:empty {
+    display: none; /*Que no lo muestre*/
+}
+
+img{
+    float: left;
+    width: 6rem;
+    height: 6rem;
+    margin-right: 1rem;
+}
+
+footer {
+    color: white;
+    background-color: rgb(71, 66, 66);
+    text-align: center;
+    padding: 1rem;
+}
+footer a {
+    color: white;
+}
