@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Blog Personal - Ejercicio 1</title>
+    <style>
+        /* Estilos básicos para visualización - NO MODIFICAR */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        nav {
+            background-color: #555;
+            padding: 0.5rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            margin: 0 0.25rem;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: #777;
+        }
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            display: flex;
+            gap: 2rem;
+        }
+        section {
+            flex: 3;
+        }
+        article {
+            background: white;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        article h2 {
+            color: #333;
+            margin-top: 0;
+        }
+        aside {
+            flex: 1;
+            background: white;
+            padding: 1.5rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            height: fit-content;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- TODO: Reemplazar este DIV por la etiqueta semántica apropiada -->
+    <header>
+        <h1>Mi Blog Personal</h1>
+    </header>
+        
+        <!-- TODO: Reemplazar este DIV por la etiqueta semántica apropiada -->
+    <nav>
+        <a href="#inicio">Inicio</a>
+            <a href="#articulos">Artículos</a>
+            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#contacto">Contacto</a>
+    </nav>
+
+    <!-- TODO: Reemplazar este DIV por la etiqueta semántica apropiada -->
+    <main>
+        
+        <section>
+            
+            <!-- TODO: Reemplazar este DIV por la etiqueta semántica apropiada -->
+            <article>
+                <h2>Mi primer artículo sobre HTML5</h2>
+                <p><strong>Publicado:</strong> 15 de enero de 2025</p>
+                <p>
+                    HTML5 ha revolucionado la forma en que estructuramos las páginas web. 
+                    Con la introducción de elementos semánticos como header, nav, article, 
+                    section y footer, ahora podemos crear documentos web que no solo se ven 
+                    bien, sino que también tienen significado estructural.
+                </p>
+                <p>
+                    Esto es especialmente importante para la accesibilidad y el SEO. Los 
+                    lectores de pantalla y los motores de búsqueda pueden entender mejor 
+                    la estructura de nuestras páginas.
+                </p>
+            </article>
+
+            <!-- TODO: Reemplazar este DIV por la etiqueta semántica apropiada -->
+            <article>
+                <h2>Introducción a CSS y el modelo de caja</h2>
+                <p><strong>Publicado:</strong> 20 de enero de 2025</p>
+                <p>
+                    El modelo de caja es fundamental para entender cómo CSS calcula las 
+                    dimensiones de los elementos. Cada elemento HTML se puede visualizar 
+                    como una caja rectangular compuesta por cuatro partes: contenido, 
+                    padding, border y margin.
+                </p>
+                <p>
+                    Comprender este modelo es esencial para crear diseños precisos y 
+                    predecibles. La propiedad box-sizing nos permite controlar cómo se 
+                    calculan las dimensiones finales de nuestros elementos.
+                </p>
+            </article>
+
+            <!-- TODO: Reemplazar este DIV por la etiqueta semántica apropiada -->
+            <article>
+                <h2>Formularios accesibles con HTML5</h2>
+                <p><strong>Publicado:</strong> 25 de enero de 2025</p>
+                <p>
+                    HTML5 introdujo nuevos tipos de inputs que mejoran enormemente la 
+                    experiencia del usuario, especialmente en dispositivos móviles. Los 
+                    tipos como email, tel, date y number no solo proporcionan validación 
+                    nativa, sino que también activan los teclados apropiados en móviles.
+                </p>
+                <p>
+                    Además, las pseudo-clases CSS como :valid e :invalid nos permiten dar 
+                    feedback visual inmediato al usuario mientras completa un formulario.
+                </p>
+            </article>
+
+        </section>
+
+        <!-- TODO: Reemplazar este DIV por la etiqueta semántica apropiada -->
+        <aside>
+            <h3>Sobre este blog</h3>
+            <p>
+                Este es mi blog personal donde comparto mis aprendizajes sobre desarrollo 
+                web, especialmente HTML5 y CSS.
+            </p>
+            
+            <h3>Categorías</h3>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Accesibilidad</li>
+            </ul>
+
+            <h3>Artículos populares</h3>
+            <ul>
+                <li><a href="#">Guía de Flexbox</a></li>
+                <li><a href="#">Grid Layout explicado</a></li>
+                <li><a href="#">Responsive Design</a></li>
+            </ul>
+        </aside>
+
+    </main>
+
+    <!-- TODO: Reemplazar este DIV por la etiqueta semántica apropiada -->
+    <footer>
+        <p>&copy; 2025 Mi Blog Personal. Todos los derechos reservados.</p>
+        <p>Sígueme en: 
+            <a href="#" style="color: white;">Twitter</a> | 
+            <a href="#" style="color: white;">GitHub</a> | 
+            <a href="#" style="color: white;">LinkedIn</a>
+        </p>
+    </footer>
+
+</body>
+</html>

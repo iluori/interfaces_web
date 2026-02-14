@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2: Modelo de Caja</title>
+    <link rel="stylesheet" href="./css/style.css">
+    
+</head>
+<body>
+    
+    <h1>Ejercicio 2: Entendiendo el Modelo de Caja</h1>
+    
+    <p>En este ejercicio vamos a explorar cómo funciona el modelo de caja de CSS con diferentes configuraciones de <code>box-sizing</code>.</p>
+
+    <hr>
+    
+    <div class="caja1">
+        <h2>Caja 1: Content-box (modo por defecto)</h2>
+        <h3>Esta es la Caja 1</h3>
+        <p>
+            <strong>Configuración:</strong> width: 300px, padding: 20px, border: 5px solid, box-sizing: content-box
+        </p>
+        <p>
+            Con <code>content-box</code>, el width se aplica solo al contenido. 
+            El padding y el border se SUMAN al ancho total.
+        </p>
+        <p>
+            <strong>¿Cuál es el ancho total real de esta caja?</strong> Calcula: 
+            300px (contenido) + 20px (padding-left) + 20px (padding-right) + 5px (border-left) + 5px (border-right) = ? 350 px
+        </p>
+    </div>
+
+    <hr>
+    
+    <div class="caja2">
+        <h2>Caja 2: Border-box (modo recomendado)</h2>
+        <h3>Esta es la Caja 2</h3>
+        <p>
+            <strong>Configuración:</strong> width: 300px, padding: 20px, border: 5px solid, box-sizing: border-box
+        </p>
+        <p>
+            Con <code>border-box</code>, el width incluye contenido, padding y border. 
+            El ancho total es exactamente el especificado: 300px.
+        </p>
+        <p>
+            <strong>¿Cuál es el ancho del contenido real?</strong> Calcula: 
+            300px (total) - 20px (padding-left) - 20px (padding-right) - 5px (border-left) - 5px (border-right) = ? 250 px
+        </p>
+    </div>
+
+    <hr>
+    
+    <div class="caja3">
+        <h2>Caja 3: Centrada horizontalmente con margin: auto</h2>
+        <h3>Esta es la Caja 3</h3>
+        <p>
+            <strong>Configuración:</strong> width: 400px, padding: 30px, border: 3px solid, box-sizing: border-box, margin: 0 auto
+        </p>
+        <p>
+            Esta caja está centrada horizontalmente gracias a <code>margin: 0 auto;</code>
+        </p>
+        <p>
+            El navegador calcula automáticamente los márgenes izquierdo y derecho para centrar el elemento.
+        </p>
+        <p>
+            <strong>Nota:</strong> Para que <code>margin: auto</code> funcione, el elemento debe tener un width definido 
+            y debe ser de tipo <code>display: block;</code>
+        </p>
+    </div>
+
+    <hr>
+
+    <h2>Instrucciones de Verificación</h2>
+    <ol>
+        <li>Aplica los estilos CSS especificados en las instrucciones</li>
+        <li>Calcula las dimensiones reales de cada caja</li>
+        <li>Abre DevTools (F12) y verifica tus cálculos en la pestaña "Computed" o "Diseño"</li>
+        <li>Observa cómo el navegador muestra visualmente el modelo de caja</li>
+    </ol>
+
+    <h2>Preguntas de Reflexión</h2>
+    <div style="background-color: #fffde7; padding: 1rem; border-left: 4px solid #fbc02d; margin-top: 1rem;">
+        <p><strong>Responde en comentarios CSS al final de tu archivo:</strong></p>
+        <ol>
+            <li>¿Qué diferencia hay entre usar <code>margin</code> y <code>padding</code> para crear espacio?</li>
+            <p>El margin es el espaciadodel marco de todo el contenido y el paddin añade espaciado entre el contenido y el margin.</p>
+            <li>¿Por qué <code>border-box</code> es más fácil de trabajar que <code>content-box</code>?</li>
+            <p>Porque el width incluye contenido, padding y border, y en el content-box no.</p>
+            <li>¿Qué pasa si intentas centrar un elemento sin especificar su <code>width</code>?</li>
+            <p>Que el bloque ocupa todo el ancho</p>
+        </ol>
+    </div>
+
+</body>
+</html>
