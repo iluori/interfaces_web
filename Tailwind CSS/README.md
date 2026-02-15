@@ -231,7 +231,7 @@ Muy útil para layouts fluidos, se usan fracciones.
 </div>
 ```
 
-(img9)
+<img src="img/img9.jpg" width="500" height="300" alt="descripción">
 
 ## Imágenes Responsivas
 
