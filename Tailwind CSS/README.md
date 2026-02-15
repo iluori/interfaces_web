@@ -428,4 +428,4 @@ Los elementos `<a>` son **inline** por defecto. El padding vertical (`py-`) no s
 </div>
 ```
 
-<img src="img/img16.jpg" width="600" height="300" alt="descripción">
+<img src="img/img16.jpg" width="500" height="600" alt="descripción">
