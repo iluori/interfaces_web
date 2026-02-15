@@ -92,7 +92,7 @@ Si realmente quieres forzar que todos los hijos tengan una propiedad no heredabl
 </div>
 ```
 
-<img src="img/img3.jpg" width="900" height="600" alt="descripción">
+<img src="img/img3.jpg" width="600" height="300" alt="descripción">
 
 ## Valores Personalizados (Arbitrary Values)
 
