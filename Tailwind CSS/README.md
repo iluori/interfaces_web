@@ -231,7 +231,7 @@ Muy útil para layouts fluidos, se usan fracciones.
 </div>
 ```
 
-<img src="img/img9.jpg" width="500" height="300" alt="descripción">
+<img src="img/img9.jpg" width="800" height="600" alt="descripción">
 
 ## Imágenes Responsivas
 
@@ -291,7 +291,7 @@ El padding añade espacio dentro del elemento, entre el contenido y el borde.
 </div>
 ```
 
-(img10)
+<img src="img/img10.jpg" width="800" height="600" alt="descripción">
 
 ## Margin (Margen Externo)
 
