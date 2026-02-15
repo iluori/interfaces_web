@@ -33,3 +33,27 @@ Debemos tener instalado previamente ```Node.js```.
 
 6. Vincular en HTML
    En ```index.html```, enlaza el archivo generado ```estilos.css```: ```<link rel="stylesheet" href="css/estilos.css">```
+
+
+# 02. Conceptos Base y Preflight
+Preflight es un conjuntod e estilos bas que incluye Tailwind para resetear los estilos prederterminados de los navegadores. Asegura una consistencia de visionado en todos los navegadores desde el inicio y obtienes un control total ya que eliminamos el factor de que el navegador decida por ti.
+
+## Cómo dar estilo
+Usando ```Utility Classes```.
+Como por ejemplo: ```<h1 clas="text-4x1 font-bold mb-4>Título Grand ey Negrita</h1>```
+
+## Estilos Globales ```@layer base```
+Se inserta en tu archivo CSS principal.
+```
+@import "tailwindcss";
+
+@layer base {
+  h1 {
+    @apply text-4xl font-bold mb-4;
+  }
+  h2 {
+    @apply text-2xl font-semibold mb-2;
+  }
+}
+```
+Esto hará que, que todos los h1 tengan el mismo estilo.
