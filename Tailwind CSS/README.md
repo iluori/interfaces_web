@@ -315,3 +315,117 @@ Usa `mx-auto` para centrar un elemento horizontalmente en su contenedor.
 ```
 
 (img11)
+
+### Márgenes Negativos
+
+Se usa el signo negativo antes de la clase. Los márgenes negativos se usan cuando queremos que elementos se solapen.
+
+```
+<div class="-mb-6">
+    <!-- Margen bottom negativo de -24px -->
+</div>
+```
+
+## Bordes
+
+### Grosor del Borde
+
+- `border`: Borde de 1px en todos los lados.
+- `border-2`, `border-4`, `border-8`: Bordes más gruesos.
+- `border-x-10`: Borde horizontal (izquierda y derecha).
+- `border-y-10`: Borde vertical (arriba y abajo).
+- `border-t`, `border-b`, `border-l`, `border-r`: Bordes individuales.
+
+  ### Color del Borde
+
+```
+<nav class="border-x-10 border-amber-400">
+    <!-- Borde horizontal de 40px color ámbar -->
+</nav>
+```
+
+(img12)
+
+### Estilo del Borde
+
+El estilo del borde se aplica a todos los lados, no se puede aplicar solo a un lado específico.
+
+Tailwind ofrece diferentes estilos de borde (similar a `border-style` en CSS): 
+
+- `border-solid` (por defecto)
+- `border-dashed`
+- `border-dotted`
+- `border-double`
+- `border-none`
+
+```
+<div class="border-4 border-blue-500 border-dashed">
+    Borde azul discontinuo
+</div>
+```
+
+(img13)
+
+## Espaciado entre Elementos Hijos: `space-`
+
+Si tienes varios elementos dentro de un contenedor y quieres separarlos, en lugar de añadir `margin` a cada uno individualmente, usa las clases `space-`. **Se aplica al padre**, no a los hijos.
+
+- `space-x-4`: Añade margen horizontal entre hijos.
+- `space-y-4`: Añade margen vertical entre hijos.
+
+```
+<nav class="space-y-4">
+    <a href="#" class="bg-slate-800 px-8 py-4 block">Inicio</a>
+    <a href="#" class="bg-slate-800 px-8 py-4 block">Acerca de</a>
+    <a href="#" class="bg-slate-800 px-8 py-4 block">Contacto</a>
+</nav>
+```
+
+(img14)
+
+## Bordes entre Elementos Hijos: `divide-`
+
+Similar a `space-`, pero en lugar de márgenes, añade bordes entre los elementos hijos. Debes especificar también el grosor, color y estilo.
+
+- `divide-x`: Bordes verticales entre hijos.
+- `divide-y`: Bordes horizontales entre hijos.
+
+```
+<nav class="flex divide-x-10 divide-lime-500 divide-dotted">
+    <a href="#" class="px-8 py-4">Inicio</a>
+    <a href="#" class="px-8 py-4">Acerca de</a>
+    <a href="#" class="px-8 py-4">Contacto</a>
+</nav>
+```
+
+(img15)
+
+## Problema con `<a>` y Padding Vertical
+
+Los elementos `<a>` son **inline** por defecto. El padding vertical (`py-`) no se aplica correctamente a elementos inline. La solución es camiar el display a `inline-block` o `block`.
+
+```html
+<!-- No funciona correctamente -->
+<a href="#" class="px-8 py-4">Enlace</a>
+
+<!-- Correcto -->
+<a href="#" class="px-8 py-4 inline-block">Enlace</a>
+<!-- o -->
+<a href="#" class="px-8 py-4 block">Enlace</a>
+```
+
+## Ejemplo Completo: Card con Tailwind
+
+```html
+<div class="w-md mx-auto my-20 border-2 border-gray-500/50 py-7 px-5 rounded-2xl space-y-8">
+  <img src="./assets/mountain_landscape.png" class="w-full h-60 object-cover rounded-md" alt="">
+  <h3 class="text-3xl font-bold my-6">¡Título Card!</h3>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut fuga temporibus consectetur libero impedit a
+    provident sed exercitationem, praesentium quam ea accusamus voluptatem unde? Est rem quod dignissimos sint
+    tempora.
+  </p>
+  <a href="#" class="block bg-blue-600 text-white text-center py-4 rounded-full">Leer más</a>
+</div>
+```
+
+(img16)
