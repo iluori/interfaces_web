@@ -68,3 +68,32 @@ Los colores se aplican combinando la propiedad con el nombre del color y su inte
 ## Opacidad transparencia
 
 Barra inclinada ```/``` seguida del porcentaje de opacidad. Ejemplo: ```text-pink-600/50``` (50% de transparencia).
+```<h1 class="bg-black/90 text-pink-900/50">Título con transparencias</h1>```
+(img1)
+
+## Agrupación de Estilos
+
+Si quieres aplicar el mismco color a más de un elemento, a veces puedes aguprarlos en un ```<div>``` padre.
+(img2)
+
+**Hay que tener cuidado con la herencia.**
+
+### Arbitrary Variants ```[&>*]```
+
+Si realmente quieres forzar que todos los hijos tengan una propiedad no heredable (como padding o background), puedes usar ```[&>*]```:
+```
+<div class="[&>*]:bg-blue-500 [&>*]:p-4">
+    <p>Soy azul con padding</p>
+    <p>Yo también</p>
+</div>
+```
+(img3)
+
+## Valores Personalizados (Arbitrary Values)
+
+Si un color no está en la paleta de Tailwind solo debes usar corchetes ```[]```
+```<h1 class="bg-[#2E86AB] text-white">Título con color personalizado directo</h1>```
+(img4)
+
+
+
