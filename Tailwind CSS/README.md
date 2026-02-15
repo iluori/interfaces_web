@@ -71,7 +71,7 @@ Barra inclinada ```/``` seguida del porcentaje de opacidad. Ejemplo: ```text-pin
 
 ```<h1 class="bg-black/90 text-pink-900/50">Título con transparencias</h1>```
 
-(img1)
+<img src="./img/img1.jpg" width="300" height="200" alt="descripción">
 
 ## Agrupación de Estilos
 
