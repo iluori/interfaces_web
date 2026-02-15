@@ -117,7 +117,7 @@ Vamos a usar un icono SVG externo (ej. de boxicons.com) y controlarlo con Tailwi
    </svg>
 ```
 
-<img src="img/img5.jpg" width="500" height="100" alt="descripción">
+<img src="img/img5.jpg" width="400" height="300" alt="descripción">
 
 
 # 04. Tipografía
