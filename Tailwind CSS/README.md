@@ -124,7 +124,7 @@ Vamos a usar un icono SVG externo (ej. de boxicons.com) y controlarlo con Tailwi
 
 ## Fuente Predeterminada
 
-Por defecto, Tailwind aplica la fuente Sans-Serif ```(ui-sans-serif)```.
+Por defecto, Tailwind aplica la fuente Sans-Serif `(ui-sans-serif)`.
 
 Si aplicas una clase de fuente al body, como font-family es una propiedad **heredable**, se aplicará a toda la página.
 
@@ -138,10 +138,25 @@ Para usar una fuente que no sea estándar, lo ideal es usar **Google Fonts** y v
 3. Selecciona los estilos que quieras.
 4. Copia los `<link>` que te proporciona y pégalos en el `<head>` de tu HTML.
 
+```
+<head>
+  <!-- ... otros meta tags ... -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+</head>
+```
 
+### Usar la fuente personalizada
 
+Ahora usa la sintaxis de **corchetes** `font-[Nombre_Fuente]`.
 
+```
+<body class="font-[Plus_Jakarta_Sans]">
+   <h1 class="text-3xl font-bold text-center mt-8">¡Hola, Tailwind CSS!</h1>
+   <p class="text-center mt-4 text-gray-600">Este es un proyecto de ejemplo utilizando Tailwind CSS.</p>
+</body>
+```
 
-
-
+(img6)
 
