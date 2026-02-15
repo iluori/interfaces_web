@@ -176,7 +176,7 @@ Tailwind usa una escala T-shirt (XS, SM, base, LG, XL...).
 
 También puedes usar valores arbitrarios si necesitas un tamaño exacto: `<p class="text-[40px]">Texto de 40 píxeles exactos</p>`
 
-<img src="img/img7.jpg" width="700" height="400" alt="descripción">
+<img src="img/img7.jpg" width="500" height="300" alt="descripción">
 
 ## Peso (`font-weight`)
 
@@ -197,4 +197,121 @@ Dependiendo de la fuente (especialmente en Google Fonts), tendrás disponibles d
 
 En este ejemplo combinamos tamaño grande de texto, peso  medio, estilo cursiva y alineación a la izquierda (inicio).
 
-<img src="img/img8.jpg" width="700" height="400" alt="descripción">
+<img src="img/img8.jpg" width="500" height="300" alt="descripción">
+
+
+# 05. Box Model y Dimensiones
+
+## Anchura (`width`)
+
+Tailwind ofrece dos formas principales de definir la anchura con la clase `w-`:
+
+### 1. Sistema Numérico
+Tailwind usa una escala donde 1 unidad = 0.25rem (4px).
+Por tanto, multiplicas el número por 4 para saber los píxeles.
+
+- `w-1` = 4px
+- `w-4` = 16px
+- `w-full` = 100%
+
+### 2. Fracciones (Porcentajes)
+Muy útil para layouts fluidos, se usan fracciones.
+
+- `w-1/2` = 50%
+- `w-1/3` = 33.333%
+- `w-full` = 100%
+
+(También puedes usar valores arbitrarios para anchos específicos)
+
+### Ejemplo Práctico
+
+```
+<div class="text-center w-1/2 bg-amber-300">
+   <h1 class="text-5xl">Mitad de ancho</h1>
+</div>
+```
+
+(img9)
+
+## Imágenes Responsivas
+
+Para asegurar que una imagen nunca desborde su contenedor, es una buena práctica darle `w-full`.
+
+```html
+<div class="w-1/2 bg-amber-300">
+    <!-- La imagen ocupará el 100% del ancho de SU PADRE (el 50% de la pantalla) -->
+    <img src="./assets/landscape.png" class="w-full" alt="Paisaje">
+</div>
+```
+
+## Altura (`height`) y el Problema del 100%
+
+La propiedad `h-` funciona de forma muy similar a `w-`.
+
+- `h-full` = 100%
+- `h-screen` = 100vh (altura de la ventana visible)
+- `h-4/5` = 80%
+
+Para que una altura en porcentaje (`h-4/5`, `h-full`) funcione, **el padre del elemento debe tener una altura definida explícitamente**. Si el `body` no tiene altura, sus hijos no pueden calcular el "80% de nada".
+
+La solución es: Aplica `h-screen` al elemento padre principal (normalmente el `<body>` o un contenedor *wrapper*) para que ocupe toda la altura de la ventana.
+
+```html
+<!-- Correcto -->
+<body class="font-[Plus_Jakarta_Sans] h-screen">
+    
+    <div class="text-center w-md h-4/5 bg-amber-300">
+        <!-- Ahora sí ocupará el 80% de la altura de la pantalla (que hereda del body) -->
+        ... contenido ...
+    </div>
+
+</body>
+```
+
+## Padding (Relleno Interno)
+
+El padding añade espacio dentro del elemento, entre el contenido y el borde.
+
+### Sintaxis Básica
+
+- `p-10`: Padding de 40px (10 × 4px) en todos los lados.
+- `px-10`: Padding horizontal (izquierda y derecha).
+- `py-20`: Padding vertical (arriba y abajo).
+
+### Padding Individual por Lado
+
+- `pt-4`: Padding top (arriba)
+- `pb-4`: Padding bottom (abajo)
+- `pl-4`: Padding left (izquierda)
+- `pr-4`: Padding right (derecha)
+
+```html
+<div class="bg-blue-500 p-10">
+    <p class="bg-white">Contenido con padding de 40px alrededor</p>
+</div>
+```
+
+(img10)
+
+## Margin (Margen Externo)
+
+El margin funciona exactamente igual que el padding, pero añade espacio fuera del elemento.
+
+### Sintaxis
+
+- `m-10`: Margin de 40px en todos los lados.
+- `mx-10`: Margin horizontal.
+- `my-20`: Margin vertical.
+- `mt-4`, `mb-4`, `ml-4`, `mr-4`: Márgenes individuales.
+
+### Centrar Horizontalmente
+
+Usa `mx-auto` para centrar un elemento horizontalmente en su contenedor.
+
+```
+<div class="w-1/2 mx-auto bg-amber-300">
+    <!-- Este div estará centrado horizontalmente -->
+</div>
+```
+
+(img11)
