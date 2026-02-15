@@ -106,7 +106,7 @@ Si un color no está en la paleta de Tailwind solo debes usar corchetes ```[]```
 
 Vamos a usar un icono SVG externo (ej. de boxicons.com) y controlarlo con Tailwind.
 
-1. Copiamos el SVG (ej. logo de Facebook).
+1. Copiamos el SVG.
 2. **Importante**: Eliminamos los estilos en línea que traiga (`width`, `height`, `fill`) para que Tailwind pueda controlarlos.
 3. Añadimos nuestras clases: `w-`, `h-`, `fill-`.
 
