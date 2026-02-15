@@ -117,7 +117,7 @@ Vamos a usar un icono SVG externo (ej. de boxicons.com) y controlarlo con Tailwi
    </svg>
 ```
 
-<img src="img/img5.jpg" width="900" height="600" alt="descripción">
+<img src="img/img5.jpg" width="500" height="100" alt="descripción">
 
 
 # 04. Tipografía
@@ -158,5 +158,5 @@ Ahora usa la sintaxis de **corchetes** `font-[Nombre_Fuente]`.
 </body>
 ```
 
-<img src="img/img6.jpg" width="900" height="600" alt="descripción">
+<img src="img/img6.jpg" width="700" height="400" alt="descripción">
 
