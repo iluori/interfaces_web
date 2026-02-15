@@ -291,7 +291,7 @@ El padding añade espacio dentro del elemento, entre el contenido y el borde.
 </div>
 ```
 
-<img src="img/img10.jpg" width="800" height="600" alt="descripción">
+<img src="img/img10.jpg" width="900" height="700" alt="descripción">
 
 ## Margin (Margen Externo)
 
@@ -314,7 +314,7 @@ Usa `mx-auto` para centrar un elemento horizontalmente en su contenedor.
 </div>
 ```
 
-(img11)
+<img src="img/img11.jpg" width="800" height="600" alt="descripción">
 
 ### Márgenes Negativos
 
