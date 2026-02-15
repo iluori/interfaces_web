@@ -162,6 +162,17 @@ Ahora usa la sintaxis de **corchetes** `font-[Nombre_Fuente]`.
    <p class="text-center mt-4 text-gray-600">Este es un proyecto de ejemplo utilizando Tailwind CSS.</p>
 </body>
 ```
-
 <img src="img/img6.jpg" width="700" height="400" alt="descripción">
+
+## Tamaños (`font-size`)
+
+Tailwind usa una escala T-shirt (XS, SM, base, LG, XL...).
+
+- `text-xs`: Extra pequeño
+- ...
+- `text-base`: Tamaño base (normalmente 16px)
+- ...
+- `text-5xl`: 5 veces el tamaño XL
+
+También puedes usar valores arbitrarios si necesitas un tamaño exacto: `<p class="text-[40px]">Texto de 40 píxeles exactos</p>`
 
