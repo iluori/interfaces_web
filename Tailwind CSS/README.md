@@ -77,7 +77,7 @@ Barra inclinada ```/``` seguida del porcentaje de opacidad. Ejemplo: ```text-pin
 
 Si quieres aplicar el mismco color a más de un elemento, a veces puedes aguprarlos en un ```<div>``` padre.
 
-(img2)
+<img src="img/img2.jpg" width="900" height="600" alt="descripción">
 
 **Hay que tener cuidado con la herencia.**
 
@@ -92,7 +92,7 @@ Si realmente quieres forzar que todos los hijos tengan una propiedad no heredabl
 </div>
 ```
 
-(img3)
+<img src="img/img3.jpg" width="900" height="600" alt="descripción">
 
 ## Valores Personalizados (Arbitrary Values)
 
@@ -100,7 +100,7 @@ Si un color no está en la paleta de Tailwind solo debes usar corchetes ```[]```
 
 ```<h1 class="bg-[#2E86AB] text-white">Título con color personalizado directo</h1>```
 
-(img4)
+<img src="img/img4.jpg" width="900" height="600" alt="descripción">
 
 ## Ejemplo Práctico: Iconos SVG
 
@@ -117,7 +117,7 @@ Vamos a usar un icono SVG externo (ej. de boxicons.com) y controlarlo con Tailwi
    </svg>
 ```
 
-(img5)
+<img src="img/img5.jpg" width="900" height="600" alt="descripción">
 
 
 # 04. Tipografía
@@ -158,5 +158,5 @@ Ahora usa la sintaxis de **corchetes** `font-[Nombre_Fuente]`.
 </body>
 ```
 
-(img6)
+<img src="img/img6.jpg" width="900" height="600" alt="descripción">
 
