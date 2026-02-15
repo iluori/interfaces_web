@@ -314,7 +314,7 @@ Usa `mx-auto` para centrar un elemento horizontalmente en su contenedor.
 </div>
 ```
 
-<img src="img/img11.jpg" width="800" height="600" alt="descripción">
+<img src="img/img11.jpg" width="900" height="700" alt="descripción">
 
 ### Márgenes Negativos
 
@@ -344,7 +344,7 @@ Se usa el signo negativo antes de la clase. Los márgenes negativos se usan cuan
 </nav>
 ```
 
-(img12)
+<img src="img/img12.jpg" width="900" height="700" alt="descripción">
 
 ### Estilo del Borde
 
@@ -364,7 +364,7 @@ Tailwind ofrece diferentes estilos de borde (similar a `border-style` en CSS):
 </div>
 ```
 
-(img13)
+<img src="img/img13.jpg" width="900" height="700" alt="descripción">
 
 ## Espaciado entre Elementos Hijos: `space-`
 
@@ -381,7 +381,7 @@ Si tienes varios elementos dentro de un contenedor y quieres separarlos, en luga
 </nav>
 ```
 
-(img14)
+<img src="img/img14.jpg" width="900" height="700" alt="descripción">
 
 ## Bordes entre Elementos Hijos: `divide-`
 
@@ -398,7 +398,7 @@ Similar a `space-`, pero en lugar de márgenes, añade bordes entre los elemento
 </nav>
 ```
 
-(img15)
+<img src="img/img15.jpg" width="900" height="700" alt="descripción">
 
 ## Problema con `<a>` y Padding Vertical
 
@@ -428,4 +428,4 @@ Los elementos `<a>` son **inline** por defecto. El padding vertical (`py-`) no s
 </div>
 ```
 
-(img16)
+<img src="img/img16.jpg" width="900" height="700" alt="descripción">
