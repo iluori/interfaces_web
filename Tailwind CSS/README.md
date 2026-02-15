@@ -51,9 +51,20 @@ Se inserta en tu archivo CSS principal.
   h1 {
     @apply text-4xl font-bold mb-4;
   }
-  h2 {
-    @apply text-2xl font-semibold mb-2;
-  }
 }
 ```
 Esto hará que, que todos los h1 tengan el mismo estilo.
+
+
+# 03. Colores y Personalización
+
+## Uso básico
+
+Los colores se aplican combinando la propiedad con el nombre del color y su intensidad (50-950).
+- Texto: ```text-color-intensidad```
+- Fondo: ```bg-color-intensidad```
+- Borde: ```border-color-intensidad```
+
+## Opacidad transparencia
+
+Barra inclinada ```/``` seguida del porcentaje de opacidad. Ejemplo: ```text-pink-600/50``` (50% de transparencia).
