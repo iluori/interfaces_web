@@ -176,3 +176,25 @@ Tailwind usa una escala T-shirt (XS, SM, base, LG, XL...).
 
 También puedes usar valores arbitrarios si necesitas un tamaño exacto: `<p class="text-[40px]">Texto de 40 píxeles exactos</p>`
 
+<img src="img/img7.jpg" width="700" height="400" alt="descripción">
+
+## Peso (`font-weight`)
+
+Dependiendo de la fuente (especialmente en Google Fonts), tendrás disponibles diferentes pesos.
+
+| Clase Tailwind | Peso CSS |
+| :--- | :--- |
+| `font-thin` | 100 |
+| `font-light` | 300 |
+| `font-normal` | 400 |
+| `font-medium` | 500 |
+| `font-bold` | 700 |
+| `font-black` | 900 |
+
+### Ejemplo Combinado
+
+`<h1 class="text-5xl font-medium italic text-start">Textos en Tailwind</h1>`
+
+En este ejemplo combinamos tamaño grande de texto, peso  medio, estilo cursiva y alineación a la izquierda (inicio).
+
+<img src="img/img8.jpg" width="700" height="400" alt="descripción">
