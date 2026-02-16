@@ -622,3 +622,20 @@ Controla si un elemento puede encogerse cuando no hay espacio.
 - `flex-none`: No crece ni encoge
 
 ## Ajuste de Línea: `flex-wrap`
+
+Por defecto, Flexbox intenta meter todos los elementos en una sola línea. Con `flex-wrap`, los elementos saltan a la siguiente línea si no caben.
+
+- `flex-nowrap`: Todo en una línea (por defecto)
+- `flex-wrap`: Permite múltiples líneas
+- `flex-wrap-reverse`: Múltiples líneas en orden inverso
+
+```html
+<div class="flex flex-wrap gap-4">
+    <!-- Si no caben, los elementos saltan a la siguiente línea -->
+    <div>Item 1</div>
+    <div>Item 2</div>
+    <div>Item 3</div>
+</div>
+```
+
+(img24)
