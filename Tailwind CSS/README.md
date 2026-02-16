@@ -447,7 +447,7 @@ Para convertir un elemento en un contenedor flex, usa la clase `flex`:
 </nav>
 ```
 
-(img17)
+<img src="img/img17.jpg" width="500" height="600" alt="descripción">
 
 ## Dirección (`flex-direction`)
 
@@ -466,7 +466,7 @@ Por defecto, Flexbox coloca los elementos en fila horizontal. Puedes cambiar la 
 </nav>
 ```
 
-(img18)
+<img src="img/img18.jpg" width="500" height="600" alt="descripción">
 
 ## Alineación Vertical: `items-`
 
@@ -512,7 +512,7 @@ Con 3 elementos y `justify-between`:
 </nav>
 ```
 
-(img19)
+<img src="img/img19.jpg" width="500" height="600" alt="descripción">
 
 ## Espaciado entre Elementos: `gap-`
 
@@ -531,7 +531,7 @@ En lugar de usar márgenes individuales, `gap-` añade espacio automático entre
 </div>
 ```
 
-(img20)
+<img src="img/img20.jpg" width="500" height="600" alt="descripción">
 
 ## Ejemplo Completo: Navbar con Flexbox
 
@@ -549,7 +549,7 @@ En lugar de usar márgenes individuales, `gap-` añade espacio automático entre
 </nav>
 ```
 
-(img21)
+<img src="img/img21.jpg" width="500" height="600" alt="descripción">
 
 ## Truco: Ajustar Logo con `object-cover`
 
@@ -578,7 +578,7 @@ Si quieres que un solo hijo tenga una alineación diferente al resto, usa `self-
 </div>
 ```
 
-(img22)
+<img src="img/img22.jpg" width="500" height="600" alt="descripción">
 
 ## Orden de los Elementos: `order-`
 
@@ -597,7 +597,7 @@ Si solo un elemento tiene `order-1` y los demás tienen `order-0` (por defecto),
 </div>
 ```
 
-(img23)
+<img src="img/img23.jpg" width="500" height="600" alt="descripción">
 
 ## Crecimiento y Encogimiento
 
@@ -638,4 +638,4 @@ Por defecto, Flexbox intenta meter todos los elementos en una sola línea. Con `
 </div>
 ```
 
-(img24)
+<img src="img/img24.jpg" width="500" height="600" alt="descripción">
