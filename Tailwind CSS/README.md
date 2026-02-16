@@ -429,3 +429,196 @@ Los elementos `<a>` son **inline** por defecto. El padding vertical (`py-`) no s
 ```
 
 <img src="img/img16.jpg" width="500" height="600" alt="descripción">
+
+
+# 06. Flexbox
+
+Flexbox es un sistema de layout unidimensional que facilita la alineación y distribución de elementos en un contenedor.
+
+## Activar Flexbox
+
+Para convertir un elemento en un contenedor flex, usa la clase `flex`:
+
+```html
+<nav class="flex">
+    <!-- Los hijos se colocan automáticamente en fila -->
+      <p>Hola</p>
+      <p>Caracola</p>
+</nav>
+```
+
+(img17)
+
+## Dirección (`flex-direction`)
+
+Por defecto, Flexbox coloca los elementos en fila horizontal. Puedes cambiar la dirección:
+
+- `flex-row`: Fila horizontal (por defecto, de izquierda a derecha)
+- `flex-row-reverse`: Fila horizontal invertida (de derecha a izquierda)
+- `flex-col`: Columna vertical (de arriba a abajo)
+- `flex-col-reverse`: Columna vertical invertida (de abajo a arriba)
+
+```html
+<nav class="flex flex-col">
+    <!-- Los elementos se apilan verticalmente -->
+      <p>Hola</p>
+      <p>Caracola</p>
+</nav>
+```
+
+(img18)
+
+## Alineación Vertical: `items-`
+
+Controla cómo se alinean los elementos en el eje transversal (perpendicular a la dirección principal).
+
+- `items-start`: Alinea al inicio (arriba en `flex-row`, izquierda en `flex-col`)
+- `items-center`: Centra verticalmente
+- `items-end`: Alinea al final (abajo en `flex-row`, derecha en `flex-col`)
+- `items-stretch`: Estira para ocupar toda la altura (por defecto)
+- `items-baseline`: Alinea por la línea base del texto
+
+```html
+<nav class="h-20 flex items-center">
+    <!-- Todos los hijos estarán centrados verticalmente -->
+      <p>Hola</p>
+      <p>Caracola</p>
+</nav>
+```
+
+## Distribución Horizontal: `justify-`
+
+Controla cómo se distribuyen los elementos en el eje principal (la dirección del flex).
+
+- `justify-start`: Agrupa al inicio (por defecto)
+- `justify-center`: Centra horizontalmente
+- `justify-end`: Agrupa al final
+- `justify-between`: Espacio **entre** elementos (primero al inicio, último al final)
+- `justify-around`: Espacio **alrededor** de cada elemento (espacios iguales)
+- `justify-evenly`: Espacio **uniforme** entre todos (incluidos los extremos)
+
+### Ejemplo con `justify-between`
+
+Con 3 elementos y `justify-between`:
+> - El **primero** (logo) se empuja a la izquierda
+> - El **segundo** (enlaces) queda en el centro
+> - El **tercero** (botón) se empuja a la derecha
+
+```html
+<nav class="flex items-center justify-between">
+    <img src="logo.png" alt="Logo">
+    <div>Enlaces</div>
+    <a href="#">Botón</a>
+</nav>
+```
+
+(img19)
+
+## Espaciado entre Elementos: `gap-`
+
+En lugar de usar márgenes individuales, `gap-` añade espacio automático entre los elementos hijos.
+
+- `gap-4`: Espacio de 16px entre todos los hijos
+- `gap-x-4`: Espacio horizontal (solo en `flex-row`)
+- `gap-y-4`: Espacio vertical (solo en `flex-col`)
+
+```html
+<div class="flex gap-10">
+    <a href="#">Inicio</a>
+    <a href="#">Acerca de</a>
+    <a href="#">Contacto</a>
+    <!-- Separación automática de 40px entre enlaces -->
+</div>
+```
+
+(img20)
+
+## Ejemplo Completo: Navbar con Flexbox
+
+```html
+<nav class="h-20 bg-slate-800 flex items-center justify-between px-10">
+   <img src="./assets/logo.png" class="h-14 w-auto object-contain" alt="Logo IES HLANZ">
+   
+   <div class="text-white flex gap-10">
+     <a href="#">Inicio</a>
+     <a href="#">Acerca de</a>
+     <a href="#">Contacto</a>
+   </div>
+   
+   <a href="#" class="bg-amber-700 text-white px-7 py-3 rounded-lg">Contáctame</a>
+</nav>
+```
+
+(img21)
+
+## Truco: Ajustar Logo con `object-cover`
+
+Al usar `w-64`, forzamos un ancho mayor que la proporción natural. Con `object-cover`, el navegador hace "zoom" y recorta el exceso vertical, eliminando el espacio sobrante.
+
+Si tu logo tiene demasiado espacio en blanco arriba y abajo, puedes forzar un recorte:
+
+```html
+<img src="./assets/logo.png" class="h-14 w-64 object-cover" alt="Logo">
+```
+
+## Alineación Individual: `self-`
+
+Si quieres que un solo hijo tenga una alineación diferente al resto, usa `self-`:
+
+- `self-start`
+- `self-center`
+- `self-end`
+- `self-stretch`
+
+```html
+<div class="flex items-center h-32 bg-gray-200">
+    <div>Centrado</div>
+    <div class="self-start">Arriba</div>
+    <div>Centrado</div>
+</div>
+```
+
+(img22)
+
+## Orden de los Elementos: `order-`
+
+ambia el orden visual de los elementos sin modificar el HTML.
+
+- `order-0`: Orden por defecto
+- `order-1`, `order-2`, etc.: Orden creciente
+
+Los elementos se ordenan de menor a mayor.
+Si solo un elemento tiene `order-1` y los demás tienen `order-0` (por defecto), ese elemento irá al final.
+
+```html
+<div class="flex">
+    <div class="order-1">Segundo (visualmente)</div>
+    <div>Primero (order-0 por defecto)</div>
+</div>
+```
+
+(img23)
+
+## Crecimiento y Encogimiento
+
+### `flex-grow`
+
+Permite que un elemento crezca para ocupar el espacio disponible.
+
+- `flex-grow`: El elemento crece proporcionalmente
+- `flex-grow-0`: No crece (por defecto)
+
+- ### `flex-shrink`
+
+Controla si un elemento puede encogerse cuando no hay espacio.
+
+- `flex-shrink`: Puede encogerse (por defecto)
+- `flex-shrink-0`: No se encoge
+
+### Atajos útiles
+
+- `flex-1`: Equivale a `flex-grow: 1; flex-shrink: 1; flex-basis: 0%` (crece y encoge)
+- `flex-auto`: Crece y encoge según su contenido
+- `flex-none`: No crece ni encoge
+
+## Ajuste de Línea: `flex-wrap`
