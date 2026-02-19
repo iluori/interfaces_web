@@ -15,4 +15,10 @@ ejercicios
 
   ejercicios flex y grid
     └── ejercicio_flex
+
+  ejercicio Tailwind Libreria
+    └── node_modules.rar
+    └── src.rar
+    └── package
+    └── package-lock
 ```
