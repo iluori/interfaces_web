@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Librería Tailwind</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lora:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body style="background-image: url('img/img_fondo.jpg'); background-size: cover; background-attachment: fixed; background-repeat: no-repeat;">
+
+<!-- HEADER -->
+<header class="flex justify-center items-center gap-4 py-6 md:justify-between md:px-6">
+    <img src="img/img_atopo.png" class="max-w-xs w-full md:max-w-sm"/>
+    <img src="img/img_logo.png" class="hidden md:block max-w-[80px]"/>
+</header>
+
+<!-- NAV -->
+<nav class="w-full bg-black/40 backdrop-blur-sm p-4 md:p-6">
+    <div class="md:flex md:justify-between md:items-center">
+
+        <div class="flex justify-between items-center">
+            <form class="w-full md:w-96 lg:w-[500px]">
+                <input type="search" placeholder="🔍"
+                    class="w-full px-3 py-2 border border-blue-300 rounded bg-blue-300">
+            </form>
+
+            <button id="menu-btn" class="md:hidden flex flex-col gap-1 ml-4">
+                <span class="w-7 h-1 bg-white"></span>
+                <span class="w-7 h-1 bg-white"></span>
+                <span class="w-7 h-1 bg-white"></span>
+            </button>
+        </div>
+
+        <ul id="nav-menu"
+            class="hidden flex-col gap-2 mt-4 md:flex md:flex-row md:gap-6 md:mt-0">
+            <li>
+                <a href="index.html"
+                   class="block px-4 py-2 bg-blue-900 text-white rounded hover:bg-blue-800 transition">
+                    Tu librería
+                </a>
+            </li>
+            <li>
+                <a href="index2.html"
+                   class="block px-4 py-2 bg-blue-900 text-white rounded hover:bg-blue-800 transition">
+                    Compra On-line
+                </a>
+            </li>
+            <li>
+                <a href="#registro"
+                   class="block px-4 py-2 bg-blue-900 text-white rounded hover:bg-blue-800 transition">
+                    Contacto
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<script>
+const btn = document.getElementById("menu-btn");
+const menu = document.getElementById("nav-menu");
+
+btn.addEventListener("click", () => {
+    if (window.innerWidth < 768) {
+        menu.classList.toggle("hidden");
+    }
+});
+</script>
+
+<!-- MAIN -->
+<main class="px-4 py-8 md:px-12 md:py-16">
+
+    <!-- CONTENEDOR FLEX 25% / 75% -->
+    <div class="flex flex-col lg:flex-row gap-8">
+
+        <!-- SIDEBAR 25% -->
+        <aside class="lg:w-1/4 bg-white/70 backdrop-blur-sm p-6 rounded-lg shadow-md h-fit">
+            <h3 class="font-bold mb-4 text-lg">Categorías</h3>
+
+            <ul class="space-y-2 text-sm text-gray-700">
+                <li class="font-semibold">Libros mitología</li>
+                <ul class="ml-4 space-y-1">
+                    <li>• Griega</li>
+                    <li>• Nórdica</li>
+                    <li>• Egipcia</li>
+                    <li>• Azteca</li>
+                    <li>• China</li>
+                </ul>
+
+                <li class="font-semibold mt-4">Merchandising</li>
+                <ul class="ml-4 space-y-1">
+                    <li>• Totebags</li>
+                    <li>• Marcapáginas</li>
+                    <li>• Gorras</li>
+                    <li>• Abanicos</li>
+                </ul>
+
+                <li class="font-semibold mt-4">Cuentos infantiles</li>
+                <ul class="ml-4 space-y-1">
+                    <li>• Edad 0-3</li>
+                    <li>• Edad 4-6</li>
+                    <li>• Edad 6-9</li>
+                </ul>
+            </ul>
+        </aside>
+
+        <!-- PRODUCTOS 75% -->
+        <div class="lg:w-3/4">
+
+            <!-- Filtros -->
+            <div class="flex justify-end mb-6">
+                <button class="bg-gray-200 px-4 py-2 rounded hover:bg-gray-300 text-sm">
+                    Filtros
+                </button>
+            </div>
+
+            <!-- GRID PRODUCTOS -->
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+
+                <!-- PRODUCTO -->
+                <article class="bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition">
+                    <img src="img/libro_mitologia.png" class="w-full h-48 object-cover rounded mb-4">
+                    <h3 class="font-bold text-sm mb-2">El libro de la mitología - AA.VV</h3>
+                    <p class="text-xs text-gray-500 mb-2">Modernos aromas clásicos...</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold">30,99 €</span>
+                        <button class="border px-3 py-1 rounded hover:bg-gray-100">🛒</button>
+                    </div>
+                </article>
+		<!-- Producto -->
+                            <article class="bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition">
+                                <img src="img/mitos_celtas.png" class="w-full h-48 object-cover rounded mb-4">
+                                <h3 class="font-bold text-sm mb-2">Mitos celtas - James / Joseph</h3>
+                                <p class="text-xs text-gray-500 mb-2">Todos se basan en mitos tradicionales...</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="font-bold">17,51 €</span>
+                                    <button class="border px-3 py-1 rounded hover:bg-gray-100">
+                                        🛒
+                                    </button>
+                                </div>
+                            </article>
+                            <article class="bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition">
+                                <img src="img/guiza_oculta.jpg" class="w-full h-48 object-cover rounded mb-4">
+                                <h3 class="font-bold text-sm mb-2">La geometría oculta de Guiza</h3>
+                                <p class="text-xs text-gray-500 mb-2">Guiza y sus cosas de Guiza vaya con Guiza...</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="font-bold">15,99 €</span>
+                                    <button class="border px-3 py-1 rounded hover:bg-gray-100">
+                                        🛒
+                                    </button>
+                                </div>
+                            </article>
+                            <article class="bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition">
+                                <img src="img/huella_vikinga.png" class="w-full h-48 object-cover rounded mb-4">
+                                <h3 class="font-bold text-sm mb-2">La huella Vikinga - José</h3>
+                                <p class="text-xs text-gray-500 mb-2">Los vikingos y sus cosas de vikingos...</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="font-bold">29,55 €</span>
+                                    <button class="border px-3 py-1 rounded hover:bg-gray-100">
+                                        🛒
+                                    </button>
+                                </div>
+                            </article>
+                            <article class="bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition">
+                                <img src="img/gorra.png" class="w-full h-48 object-cover rounded mb-4">
+                                <h3 class="font-bold text-sm mb-2">Gorra con cuernos vikinga</h3>
+                                <p class="text-xs text-gray-500 mb-2">Con esta super gorra vikinga podrás ir a la moda más vikinga...</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="font-bold">17,99 €</span>
+                                    <button class="border px-3 py-1 rounded hover:bg-gray-100">
+                                        🛒
+                                    </button>
+                                </div>
+                            </article>
+                            <article class="bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition">
+                                <img src="img/boli.png" class="w-full h-48 object-cover rounded mb-4">
+                                <h3 class="font-bold text-sm mb-2">Bolígrafo nórdico</h3>
+                                <p class="text-xs text-gray-500 mb-2">Menudo bolígrafo, dios mio. Puedo firmar mis contartos con la mejor presencia...</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="font-bold">15,99 €</span>
+                                    <button class="border px-3 py-1 rounded hover:bg-gray-100">
+                                        🛒
+                                    </button>
+                                </div>
+                            </article>
+                            <article class="bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition">
+                                <img src="img/nuba.jpg" class="w-full h-48 object-cover rounded mb-4">
+                                <h3 class="font-bold text-sm mb-2">Nuba y el hilo del mundo</h3>
+                                <p class="text-xs text-gray-500 mb-2">Nuba es una niña muy peculiar y en sus ojos destella...</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="font-bold">15,99 €</span>
+                                    <button class="border px-3 py-1 rounded hover:bg-gray-100">
+                                        🛒
+                                    </button>
+                                </div>
+                            </article>
+                            <article class="bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition">
+                                <img src="img/zeus_libro.jpg" class="w-full h-48 object-cover rounded mb-4">
+                                <h3 class="font-bold text-sm mb-2">Zeus El rey de las nubes</h3>
+                                <p class="text-xs text-gray-500 mb-2">Zeus el Dios griego más temido...</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="font-bold">15,99 €</span>
+                                    <button class="border px-3 py-1 rounded hover:bg-gray-100">
+                                        🛒
+                                    </button>
+                                </div>
+                            </article>
+                            <article class="bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition">
+                                <img src="img/zeus_libro.jpg" class="w-full h-48 object-cover rounded mb-4">
+                                <h3 class="font-bold text-sm mb-2">Abanico chino</h3>
+                                <p class="text-xs text-gray-500 mb-2">Abanícate con letras chinas la cara, los brazos y el cu...</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="font-bold">23,54 €</span>
+                                    <button class="border px-3 py-1 rounded hover:bg-gray-100">
+                                        🛒
+                                    </button>
+                                </div>
+                            </article>
+                            <article class="bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition">
+                                <img src="img/gorra_gris.jpg" class="w-full h-48 object-cover rounded mb-4">
+                                <h3 class="font-bold text-sm mb-2">Gorra griega</h3>
+                                <p class="text-xs text-gray-500 mb-2">Con los mejores acabados del mercado lleva en tu cabeza...</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="font-bold">23,90 €</span>
+                                    <button class="border px-3 py-1 rounded hover:bg-gray-100">
+                                        🛒
+                                    </button>
+                                </div>
+                            </article>
+                
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="text-white px-4 py-8 md:px-12 md:py-12 bg-black/40 backdrop-blur-sm w-full">
+    <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+
+        <div class="flex gap-4 text-xl">
+            <a href="#" class="hover:text-blue-400"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="hover:text-blue-400"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="hover:text-blue-400"><i class="fab fa-facebook"></i></a>
+        </div>
+
+        <div class="flex flex-col md:flex-row gap-4 text-sm text-center">
+            <a href="#" class="hover:text-blue-400">Política de privacidad</a>
+            <a href="#" class="hover:text-blue-400">Cookies</a>
+            <a href="#" class="hover:text-blue-400">Copyright</a>
+        </div>
+
+    </div>
+</footer>
+
+</body>
+</html>
