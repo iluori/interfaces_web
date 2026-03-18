@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Librería - Html</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lora:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+    <body>
+            <!-- ========== HEADER - CABECERA ========== -->
+        <header>
+            <!-- Nombre de la empresa -->
+            <img id="logo" src="img/img_atopo.png" alt="nombre"/>
+            <!-- Logotipo libro -->
+            <img id="logo2" src="img/img_logo.png" alt="logo"/>
+        </header>
+
+        <nav>
+            <button class="hamburger-menu" id="hamburgerBtn" aria-label="Menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Formulario de búsqueda - Lado izquierdo -->
+            <form class="search-form" action="#" method="get">
+                <input type="search" name="buscar" placeholder="🔍">
+            </form>
+            
+            <!-- Lista de navegación - Lado derecho -->
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#inicio">Tu librería</a></li>
+                <li><a href="index2_Iluminada_librería2.html">Compra On-line</a></li>
+                <li><a href="#registro">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <!-- ========== MAIN - CONTENIDO PRINCIPAL ========== -->
+        <main>
+            <!-- SECCIÓN 1: ZONA DE PRESENTACIÓN -->
+            <section class="presentation-section">
+                <h1>Un archivo de lo sagrado, lo<br>simbólico y lo imposible</h1>
+                <div class="hero-description">
+                    Explora relatos ancestrales, epopeyas heroicas y secretos olvidados. Bienvenido/a a la librería donde cada libro es un portal al origen del mundo
+                </div>
+                
+                <!-- Personajes mitológicos decorativos -->
+                <div class="characters">
+                    <img src="img/img_zeus.png" alt="zeus">
+                    <img src="img/img_serpiente.png" alt="serpiente">
+                    <img src="img/img_grifo.png" alt="grifo">
+                    <img src="img/img_arco.png" alt="arco">
+                </div>
+            </section>
+
+            <!-- SECCIÓN 2: NOVEDADES -->
+            <section class="news-section">
+                <div class="news-box">
+                    <h2>Libros y Artículos</h2>
+                </div>
+                
+                <!-- Grid de productos -->
+                <div class="products-grid">
+                    <!-- Producto 1 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="img/libro_mitologia.png" alt="libro">
+                        </div>
+                        <div class="product-info">
+                            <h3>El libro de la mitología - AAVV</h3>
+                            <p>Modernos aromas clásicos, gráficos ilustrativos y atractivos burgueses. El texto de la mitología aporta una nueva mirada sobre sus libros y su significado.</p>
+                        </div>
+                    </article>
+
+                    <!-- Producto 2 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="img/totebag_vikingo.png" alt="totebag">
+                        </div>
+                        <div class="product-info">
+                            <h3>Totebag Vikingo Pelirojo</h3>
+                            <p>Fabricada con materiales resistentes y un diseño que combina fuerza y estilo, es perfecta para acompañarte en tus aventuras diarias.</p>
+                        </div>
+                    </article>
+
+                    <!-- Producto 3 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="img/marcapaginas_dragon.png" alt="marcapáginas">
+                        </div>
+                        <div class="product-info">
+                            <h3>Marcapáginas chino</h3>
+                            <p>Este marcapáginas combina diseño artístico y significado cultural, convirtiéndose en un accesorio único para lectores que valoran la historia y la belleza oriental.</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- SECCIÓN 3: BUSCADOR DE TIENDAS -->
+            <section class="store-finder-section">
+                <h2>Nuestras tiendas</h2>
+                
+                <div class="store-finder-container">
+                    <!-- Mapa -->
+                    <div>
+                        <div class="store-map">
+                            <img src="img/mapa.png" alt="mapa">
+                        </div>
+                        <div class="map-controls">
+                            <button class="map-button">+</button>
+                            <button class="map-button">-</button>
+                        </div>
+                    </div>
+
+                    <!-- Listado de tiendas -->
+                    <div class="store-list">
+                        <!-- Formulario de búsqueda -->
+                        <form class="store-search-form" action="#" method="get">
+                            <input type="text" name="ubicacion" placeholder="🔍 Buscar...">
+                        </form>
+
+                        <!-- Grid de tiendas -->
+                        <div class="stores-grid">
+                            <article class="store-card">
+                                <h3>Tienda Granada</h3>
+                                <p>Calle Cárras, 3</p>
+                                <p>18001 Granada</p>
+                            </article>
+
+                            <article class="store-card">
+                                <h3>Tienda Granada</h3>
+                                <p>Calle Alhamar, 2</p>
+                                <p>18001 Sevilla</p>
+                            </article>
+
+                            <article class="store-card">
+                                <h3>Tienda Madrid</h3>
+                                <p>Avenida Luna, 22</p>
+                                <p>28003 Madrid</p>
+                            </article>
+
+                            <article class="store-card">
+                                <h3>Tienda Madrid</h3>
+                                <p>Calle Callao, 1</p>
+                                <p>28003 Madrid</p>
+                            </article>
+
+                            <article class="store-card">
+                                <h3>Tienda Sevilla</h3>
+                                <p>Calle Recaredo, 3/0</p>
+                                <p>41003 Sevilla</p>
+                            </article>
+
+                            <article class="store-card">
+                                <h3>Tienda Madrid</h3>
+                                <p>Calle Alcalá, 3/0</p>
+                                <p>28010 Madrid</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- ========== FOOTER - PIE DE PÁGINA ========== -->
+        <footer>
+            <div class="footer-content">
+                <!-- Redes sociales -->
+                <div class="footer-social">
+                    <div class="social-icons">
+                        <a href="#instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#twitter" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#facebook" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+
+                <!-- Políticas -->
+                <div class="footer-bottom">
+                    <a href="#politica-privacidad">Política de privacidad</a>
+                    <a href="#cookies">Cookies</a>
+                    <a href="#copyright">Copyright</a>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script>
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const navMenu = document.getElementById('navMenu');
+
+        hamburgerBtn.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+            hamburgerBtn.classList.toggle('active');
+        });
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', function() {
+                navMenu.classList.remove('active');
+                hamburgerBtn.classList.remove('active');
+            });
+        });
+    </script>
+</html>

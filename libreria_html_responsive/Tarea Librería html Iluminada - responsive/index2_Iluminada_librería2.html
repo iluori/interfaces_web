@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Librería - Productos</title>
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lora:wght@400;600&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+
+    <body>
+
+    <!-- HEADER -->
+    <header>
+        <img id="logo" src="img/img_atopo.png" alt="nombre">
+        <img id="logo2" src="img/img_logo.png" alt="logo">
+    </header>
+
+    <!-- NAV -->
+        <nav>
+
+            <button class="hamburger-menu" id="hamburgerBtn" aria-label="Menú">
+            <span></span>
+            <span></span>
+            <span></span>
+            </button>
+
+            <form class="search-form" action="#" method="get">
+            <input type="search" name="buscar" placeholder="🔍">
+            </form>
+
+            <ul class="nav-menu" id="navMenu">
+            <li><a href="#inicio">Tu librería</a></li>
+            <li><a href="#tienda">Compra On-line</a></li>
+            <li><a href="#registro">Contacto</a></li>
+            </ul>
+
+        </nav>
+
+        <!-- MAIN -->
+        <main class="main-products">
+
+            <div class="products-container">
+
+        <!-- SIDEBAR -->
+            <aside class="sidebar">
+
+            <h3>Categorías</h3>
+
+            <ul>
+
+            <li class="categoria">Libros mitología
+            <ul class="subcategoria">
+            <li>Griega</li>
+            <li>Nórdica</li>
+            <li>Egipcia</li>
+            <li>Azteca</li>
+            <li>China</li>
+            </ul>
+            </li>
+
+            <li class="categoria">Merchandising
+            <ul class="subcategoria">
+            <li>Totebags</li>
+            <li>Marcapáginas</li>
+            <li>Gorras</li>
+            <li>Abanicos</li>
+            </ul>
+            </li>
+
+            <li class="categoria">Cuentos infantiles
+            <ul class="subcategoria">
+            <li>Edad 0-3</li>
+            <li>Edad 4-6</li>
+            <li>Edad 6-9</li>
+            </ul>
+            </li>
+
+            </ul>
+
+            </aside>
+
+            <!-- PRODUCTOS -->
+            <section class="products">
+
+            <div class="filters">
+            <button>Filtros</button>
+            </div>
+
+            <div class="products-grid-2">
+
+            <!-- PRODUCTO -->
+            <article class="product">
+
+            <img src="img/libro_mitologia.png">
+
+            <h3>El libro de la mitología - AA.VV</h3>
+
+            <p>Modernos aromas clásicos...</p>
+
+            <div class="product-footer">
+            <span class="price">30,99 €</span>
+            <button class="cart-btn">🛒</button>
+            </div>
+
+            </article>
+
+
+            <article class="product">
+
+            <img src="img/mitos_celtas.png">
+
+            <h3>Mitos celtas - James / Joseph</h3>
+
+            <p>Todos se basan en mitos tradicionales...</p>
+
+            <div class="product-footer">
+            <span class="price">17,51 €</span>
+            <button class="cart-btn">🛒</button>
+            </div>
+
+            </article>
+
+
+            <article class="product">
+
+            <img src="img/guiza_oculta.jpg">
+
+            <h3>La geometría oculta de Guiza</h3>
+
+            <p>Guiza y sus cosas de Guiza...</p>
+
+            <div class="product-footer">
+            <span class="price">15,99 €</span>
+            <button class="cart-btn">🛒</button>
+            </div>
+
+            </article>
+
+
+            <article class="product">
+
+            <img src="img/huella_vikinga.png">
+
+            <h3>La huella Vikinga</h3>
+
+            <p>Los vikingos y sus cosas...</p>
+
+            <div class="product-footer">
+            <span class="price">29,55 €</span>
+            <button class="cart-btn">🛒</button>
+            </div>
+
+            </article>
+
+            </div>
+
+            </section>
+
+            </div>
+
+        </main>
+
+        <!-- FOOTER -->
+        <footer>
+
+            <div class="footer-content">
+
+            <div class="footer-social">
+
+            <div class="social-icons">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            </div>
+
+            </div>
+
+            <div class="footer-bottom">
+            <a href="#">Política de privacidad</a>
+            <a href="#">Cookies</a>
+            <a href="#">Copyright</a>
+            </div>
+
+            </div>
+
+        </footer>
+
+        <script>
+
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const navMenu = document.getElementById('navMenu');
+
+        hamburgerBtn.addEventListener('click', function() {
+        navMenu.classList.toggle('active');
+        hamburgerBtn.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+        link.addEventListener('click', function() {
+        navMenu.classList.remove('active');
+        hamburgerBtn.classList.remove('active');
+        });
+        });
+
+        </script>
+
+    </body>
+</html>
